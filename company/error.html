@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>error page </title>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+
+  }
+      
+.codes{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+input{
+    margin: 0;
+    padding: 1px 2px;
+}
+
+
+body {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  align-content: center;
+  flex-direction: column;
+  margin: 0;
+}
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border-color: blue;
+  width: 400px;
+}
+
+input, textarea, select {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-color: blue;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button{
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  align-items: center;
+  width: 100%;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0px;
+
+    
+}
+button:hover{
+    background-color: gray;
+    cursor: pointer;
+    align-items: center;
+}
+input[name="errorcodes"],
+input[name="meaning"]
+ { 
+  display: flex;
+  
+}.codes,input[name="errorcodes"],
+input[name="meaning"]{
+  justify-content: space-between;
+  display: flex;
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <h2> ERROR CODES ENTRY PAGE </h2>
+
+<form class="form">
+
+         <input type="text" name="fristname" placeholder="fristname" required >
+         <input type="text"   name="surname"  placeholder="surname" required>
+
+
+    <div class="codes">
+      <input type="text" name="error" placeholder="errorcodes">
+      <input type="text" name="meaning" placeholder="meaning">
+    </div>
+
+    <button>submit</button>
+
+
+
+</form>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html

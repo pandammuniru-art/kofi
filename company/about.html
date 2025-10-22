@@ -2,22 +2,21 @@
 <html lang="en">
 <head>
     <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
        
-        navbar{
-            padding: 10px ;
-            margin: 10px;
-            background-color:black;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            text-align: center;
-            display: block;
-            margin-bottom: 0;
+        nav{
+        color: red;
 
 
             
-           /* margin-bottom: 15px;*/
+          
             
         }
-        navbar a{
+        nav a{
             padding: 10px;
             font-family: Arial;
             font-size: medium;
@@ -66,7 +65,7 @@
         }
         .row{
             display: flex;
-            justify-content: center ;
+            justify-content: center ; 
     
         }
         .card {
@@ -78,9 +77,9 @@
     text-align: center;
     text-transform: uppercase;
 }
-p{text-transform: lowercase;
+p{text-transform:none;
 }
-about{
+.about{
     text-decoration: solid;
 }
 h2{
@@ -92,9 +91,17 @@ body{
     margin: 0;
     padding: auto;
 }
+.contact,h2{ 
+    color: aliceblue;
+    text-transform: capitalize;
+}
+.info{ 
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 75px;
+    margin-right: 10px ;
 
-
-
+}
 
 
     </style>
@@ -102,20 +109,24 @@ body{
     <title>profile</title>
 </head>
 <body>
-    <navbar>
+    <nav>
+        <img src="images/home.png u" >
         <a href="#">HOME</a>
         <a href="#About">About me</a>
         <a href="#">my profile</a>
         <a href="#">project</a>
-        <a href="#">contact</a>
-    </navbar>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <section id="HOME">
 
     <div class="header">
         <h1> MY WEB SITE profile</h1>
+        <img src="PANDAM.png" alt="profile photo" width="150px" height="150px" style="border-radius: 75px ;">
         <h2><p>Welcome to my website !!</p></h2>
     </div>
 
-
+    </section>
 <div class="row">   
      <div class="cardDiv">
         <div class="card">
@@ -136,23 +147,36 @@ body{
 
         <section id="About">
         <h3 id="About">About Me </h3>
-        <h2>
+
+        <div class="info">
+            
+                   <img src="PANDAM (1).png" alt="profile photo" width="150px" height="150px" style="border-radius: 75px ; ; margin-right: 10px ;">
+
+
+        <p>
                   My name is Alhassan Muniru Pandam. Im passionate about technology,
                   learning, and helping others understand computer systems and web design.
                   I enjoy creating websites and learning new coding techniques.
-        </h2>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione eos culpa ab sint fugiat maiores eaque cumque, libero rerum laboriosam maxime consectetur assumenda tenetur quia, dolorum quaerat harum aspernatur et?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, totam a? Laudantium tempore nihil eos praesentium quo veritatis accusamus nulla reprehenderit dolores autem similique, necessitatibus, sed facere! Eveniet, quod consequuntur.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam reiciendis facere dolorem est optio pariatur cum aut labore consequatur, ipsum error, esse impedit animi illo? Aut maxime dolores laborum quo?
+        </p>
 
+        </div>
      </section>
 
-                
+
     <footer>
-        <div class="contact">
-            <h2>contact me </h2>
+        <section id="contact"> 
+             <div class="contact">
+            <h2> &phone;  c   o   n   t   a   c   t   m   e </h2>
             <p>Email:pandamaLhassan663@gmail.com</p>
             <p>phone : +233 55 538 76 84</p>
             <p>locate me : pokuase Accra
             </p>
-        </div>
+        </div>      
+ </section>
+       
         <p>
             copyright&copy;2025 myprofile
         </p>
